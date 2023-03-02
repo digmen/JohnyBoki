@@ -1,13 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JohnyBoki</title>
-</head>
-<body>
-    <p>Поменял тут код Жони</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous"
+    />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="container">
+        <div class="navbar">
+          <img class="logo" src="./img/logo.png" alt="logo">
+          <div class="search-panel">
+            <input type="text" placeholder="Search" id="search">
+            <button class="btn-search"><img src="./img/search-icon.svg" alt=""></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <div class="d-flex justify-content-center container z-1" id="admin-panel">
+      <form
+        id="add-form"
+        class="d-flex flex-column w-50 align-items-center mt-5"
+      >
+        <h2>Admin panel</h2>
+        <input
+          type="text"
+          class="z-1 mb-2 w-100 form-control inp"
+          placeholder="Title"
+          id="title"
+        />
+        <input
+          type="text"
+          class="z-1 mb-2 w-100 form-control inp"
+          placeholder="Price"
+          id="price"
+        />
+        <input
+          type="text"
+          class="z-1 mb-2 w-100 form-control inp"
+          placeholder="Description"
+          id="description"
+        />
+        <input
+          type="text"
+          class="z-1 mb-2 w-100 form-control inp"
+          placeholder="Image URL"
+          id="image"
+        />
+        <button class="z-1 btn w-40 mt-5" id="btn">Add JDM car</button>
+      </form>
+    </div>
+
+    <section class="tree z-0">
+      <div class="tree-one">
+        <img src="./img/sakura-tree-1.png" alt="">
+      </div>
+      
+    </section>
+
+    <div id="car-list" class="d-flex flex-wrap justify-content-center">
+      <div class="card m-5" style="width: 18rem">
+        <img
+          src="https://www.motortrend.com/uploads/sites/25/2020/09/Top-20-JDM-Nissans-Hirokk-Koga-93-S13-Onevia-01.jpg?fit=around%7C875:492"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-danger">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer"> 
+          <img src="./img/Copyrigt-icon.png" alt=""><h1>Copyright :</h1>
+          <p class="paragraph">Boki</p>
+          <p class="paragraph">Johny</p>
+          <p class="paragraph">Omka</p>
+        </div>
+      </div>
+    </footer>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
     <script src="./main.js"></script>
   </body>
 </html>
